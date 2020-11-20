@@ -7272,11 +7272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj",
+      "projectUniqueName": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj",
       "projectName": "MovieShop.infrastructure",
-      "projectPath": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj",
+      "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj",
       "packagesPath": "C:\\Users\\62316\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.infrastructure\\obj\\",
+      "outputPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\62316\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7293,8 +7293,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
-              "projectPath": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj"
+            "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
+              "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj"
             }
           }
         }

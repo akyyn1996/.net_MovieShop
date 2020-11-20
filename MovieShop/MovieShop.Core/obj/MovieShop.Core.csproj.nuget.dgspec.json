@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {}
+    "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
+    "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
+        "projectUniqueName": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
         "projectName": "MovieShop.Core",
-        "projectPath": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
+        "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
         "packagesPath": "C:\\Users\\62316\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\obj\\",
+        "outputPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\62316\\AppData\\Roaming\\NuGet\\NuGet.Config",

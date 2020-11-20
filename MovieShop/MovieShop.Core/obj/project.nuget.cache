@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DTyqrMbiLQXB7ul/k5+52xqimNME8R2fHwLmD0xpisROrXvdEkr3u/nUJjm/FPAiXN84n8CbA23CRlgfnlecbA==",
+  "dgSpecHash": "hk1tOYljjPLLneTF0Quo9hhSphV/rBrrTBKBKqaH3+DhL7MQo5i6G7YVpDNDkRlzO/RaJ9dQLXUQ0ROtRAq+mA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\62316\\source\\repos\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
+  "projectFilePath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\62316\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\62316\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
