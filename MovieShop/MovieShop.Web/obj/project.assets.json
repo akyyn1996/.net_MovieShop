@@ -1513,7 +1513,8 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "System.ComponentModel": "4.3.0",
-          "System.ComponentModel.Annotations": "5.0.0"
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Linq.Expressions": "4.3.0"
         },
         "compile": {
           "bin/placeholder/MovieShop.Core.dll": {}

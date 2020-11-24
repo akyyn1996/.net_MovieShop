@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -10,6 +11,18 @@ namespace MovieShop.infrastructure.Data
     //how to find?
     public class MovieShopDbContext: DbContext
     {
+        //public class Test
+        //{
+        //    void Mm()
+        //    {
+        //        using (var db = new MovieShopDbContext(null))
+        //        {
+                   
+        //        }
+
+        //    }
+        //}
+
         public MovieShopDbContext(DbContextOptions<MovieShopDbContext> options): base(options)
         {
 
