@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace MovieShop.infrastructure.Repositories
 {
-    public class MovieRepository : EfRepository<Movie>, IMovieRepository
+    public class MovieRepositoryTest : EfRepository<Movie>, IMovieRepository
     {
-        public MovieRepository(MovieShopDbContext dbContext) : base(dbContext)
+        public MovieRepositoryTest(MovieShopDbContext dbContext) : base(dbContext)
         {
         }
         public async Task<IEnumerable<Movie>> GetTopRatedMovies()
@@ -25,10 +25,11 @@ namespace MovieShop.infrastructure.Repositories
         public async Task<IEnumerable<Movie>> GetHighestRevenueMovies()
         {
             var movies = await _dbContext.Movies.OrderByDescending(m => m.Revenue).Take(50).ToListAsync();
-            // skip and take 
+            // skip and take
             // offset 10 and fetch 50 next rows
             return movies;
         }
 
     }
 }
+

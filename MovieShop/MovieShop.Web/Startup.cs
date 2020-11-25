@@ -9,6 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieShop.infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using MovieShop.Core.ServiceInterfaces;
+using MovieShop.infrastructure.Services;
+using MovieShop.infrastructure.Repositories;
 
 namespace MovieShop.Web
 {
@@ -26,8 +29,12 @@ namespace MovieShop.Web
         {
             services.AddControllersWithViews();
 
+            // .NET Core Framework did not had built-in IOC, we had to use 3rd party IOC, NINJECT, Autofac
             services.AddDbContext<MovieShopDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(("MovieShopDbConnection"))));
+
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IMovieRepository, MovieRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

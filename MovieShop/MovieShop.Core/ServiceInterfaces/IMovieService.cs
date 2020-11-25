@@ -9,6 +9,8 @@ namespace MovieShop.Core.ServiceInterfaces
 {
     public interface IMovieService
     {
+
+        
         Task<PagedResultSet<MovieResponseModel>> GetMoviesByPagination(int pageSize = 20, int page = 0, string title = "");
         Task<PagedResultSet<MovieResponseModel>> GetAllMoviePurchasesByPagination(int pageSize = 20, int page = 0);
         Task<PaginatedList<MovieResponseModel>> GetAllPurchasesByMovieId(int movieId);
@@ -20,5 +22,7 @@ namespace MovieShop.Core.ServiceInterfaces
         Task<IEnumerable<MovieResponseModel>> GetMoviesByGenre(int genreId);
         Task<MovieDetailsResponseModel> CreateMovie(MovieCreateRequest movieCreateRequest);
         Task<MovieDetailsResponseModel> UpdateMovie(MovieCreateRequest movieCreateRequest);
+
+        Task<IEnumerable<MovieResponseModel>> GetTopRevenueMovies();
     }
 }

@@ -7,3 +7,12 @@ C:\Users\62316\source\repos\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\Mo
 C:\Users\62316\source\repos\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.csproj.CoreCompileInputs.cache
 C:\Users\62316\source\repos\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.dll
 C:\Users\62316\source\repos\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.pdb
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\bin\Debug\netstandard2.1\MovieShop.Core.deps.json
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\bin\Debug\netstandard2.1\MovieShop.Core.dll
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\bin\Debug\netstandard2.1\MovieShop.Core.pdb
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.csprojAssemblyReference.cache
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.AssemblyInfoInputs.cache
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.AssemblyInfo.cs
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.csproj.CoreCompileInputs.cache
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.dll
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Core\obj\Debug\netstandard2.1\MovieShop.Core.pdb
