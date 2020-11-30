@@ -23,7 +23,7 @@ namespace MovieShop.infrastructure.Data
         //    }
         //}
 
-        public MovieShopDbContext(DbContextOptions<MovieShopDbContext> options): base(options)
+        public MovieShopDbContext(DbContextOptions<MovieShopDbContext> options): base(options)  // options in the startup will go to the constructor of bdcontext
         {
 
         }

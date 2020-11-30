@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieShop.infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using MovieShop.Core.Entities;
+using MovieShop.Core.RepositoryInterfaces;
 using MovieShop.Core.ServiceInterfaces;
 using MovieShop.infrastructure.Services;
 using MovieShop.infrastructure.Repositories;
@@ -29,12 +31,17 @@ namespace MovieShop.Web
         {
             services.AddControllersWithViews();
 
-            // .NET Core Framework did not had built-in IOC, we had to use 3rd party IOC, NINJECT, Autofac
+            // .NET Framework did not had built-in IOC, we had to use 3rd party IOC, NINJECT, Autofac
+            // .NET Core has built-in IOC support
+            // use EF
             services.AddDbContext<MovieShopDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(("MovieShopDbConnection"))));
-
+            // Resgister our DI services
+            // also repositories
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IAsyncRepository<Genre>, EfRepository<Genre>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,17 +55,21 @@ namespace MovieShop.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-            app.UseStaticFiles();
-
-            app.UseRouting();
-            // 
-            app.UseAuthorization();
-
+            app.UseStaticFiles(); // middleware 
+            // routing the url to correct controller action. PART1
+            app.UseRouting();// middleware   
+            
+            app.UseAuthorization();// middleware 
+            // routing the url to correct controller action. PART2
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+                // traditional based routing. convention based routing. 
+                // Atribute based routing.(Most used one)
             });
         }
     }

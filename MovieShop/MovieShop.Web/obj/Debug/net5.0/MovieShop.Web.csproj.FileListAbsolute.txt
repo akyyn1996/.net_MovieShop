@@ -146,3 +146,5 @@ D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\MovieS
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\ref\MovieShop.Web.dll
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\MovieShop.Web.pdb
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\MovieShop.Web.genruntimeconfig.cache
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Shared\_MovieCard.cshtml.g.cs
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Shared\Components\Genres\Default.cshtml.g.cs

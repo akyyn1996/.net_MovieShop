@@ -23,6 +23,11 @@ namespace MovieShop.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var movies = await _movieService.GetTopRevenueMovies();
+
+            //var test = await _movieService.GetMovieAsync(23);
+            //var testdata = "List of Movies";
+            //ViewBag.myp = testdata;
+
             return View(movies);
             // By default whe  you do return View its gonna return View with Same name as action method
             // name inside the Views Folder of that Controller name folder
