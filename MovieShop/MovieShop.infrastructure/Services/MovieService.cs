@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using MovieShop.Core.Models.Request;
+using MovieShop.Core.Models.Response;
 
 namespace MovieShop.infrastructure.Services
 {
