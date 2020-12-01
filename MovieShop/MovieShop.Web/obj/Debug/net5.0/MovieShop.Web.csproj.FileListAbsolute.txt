@@ -223,3 +223,5 @@ D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\bin\Debug\net5.0\zh-Han
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Account\MyAccount.cshtml.g.cs
