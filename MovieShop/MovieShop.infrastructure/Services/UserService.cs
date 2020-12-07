@@ -102,8 +102,9 @@ namespace MovieShop.infrastructure.Services
         public async Task<FavoriteResponseModel> GetAllFavoritesForUser(int id)
         {
 
-            var favoriteMovies = await _favoriteRepository.ListAsync(
-                p => p.UserId == id);
+            var favoriteMovies = await _favoriteRepository.ListAllWithIncludesAsync(
+                p => p.UserId == id,
+                p => p.Movie);
             var response = new FavoriteResponseModel();
             foreach (var favoriteMovie in favoriteMovies)
             {
@@ -125,9 +126,9 @@ namespace MovieShop.infrastructure.Services
         public async Task<PurchaseResponseModel> GetAllPurchasesForUser(int id)
         {
 
-            var purchasedMovies = await _purchaseRepository.ListAsync(
-                p => p.UserId == id
-                );
+            var purchasedMovies = await _purchaseRepository.ListAllWithIncludesAsync(
+                p => p.UserId == id,
+                p => p.Movie);
 
 
             var response = new PurchaseResponseModel();
