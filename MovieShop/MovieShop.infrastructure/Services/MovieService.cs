@@ -22,7 +22,7 @@ namespace MovieShop.infrastructure.Services
         private readonly IPurchaseRepository _purchaseRepository;
         // Constructor Injection
         // DI is pattern that enables us th write lossly coupled code so that the code is more maintainable and testable
-        public MovieService(IMovieRepository movieRepository, IAsyncRepository<MovieGenre> genresRepository)
+        public MovieService(IMovieRepository movieRepository, IAsyncRepository<MovieGenre> genresRepository, IPurchaseRepository purchaseRepository)
         {
 
             // newing up is very convineint but we need to avoid it as much as we can
@@ -34,7 +34,7 @@ namespace MovieShop.infrastructure.Services
 
             _movieRepository = movieRepository;
             _genresRepository = genresRepository;
-            //_purchaseRepository = purchaseRepository;
+            _purchaseRepository = purchaseRepository;
 
         }
 
@@ -135,9 +135,26 @@ namespace MovieShop.infrastructure.Services
         }
 
 
-        public Task<PagedResultSet<MovieResponseModel>> GetAllMoviePurchasesByPagination(int pageSize = 20, int page = 0)
+        public async Task<PagedResultSet<MovieResponseModel>> GetAllMoviePurchasesByPagination(int pageSize = 20, int page = 0)
         {
-            throw new NotImplementedException();
+            var totalPurchases = await _purchaseRepository.GetCountAsync();
+            var purchases = await _purchaseRepository.GetAllPurchases(pageSize, page);
+            var response = new List<MovieResponseModel>();
+            foreach (var purchase in purchases)
+            {
+                response.Add(new MovieResponseModel
+                {
+                    Id = purchase.Id,
+                    PosterUrl = purchase.Movie.PosterUrl,
+                    ReleaseDate = purchase.PurchaseDateTime,
+                    Title = purchase.Movie.Title
+                });
+            }
+            
+
+            
+            var purchasedMovies = new PagedResultSet<MovieResponseModel>(response, page, pageSize, totalPurchases);
+            return purchasedMovies;
         }
 
         public Task<PaginatedList<MovieResponseModel>> GetAllPurchasesByMovieId(int movieId)

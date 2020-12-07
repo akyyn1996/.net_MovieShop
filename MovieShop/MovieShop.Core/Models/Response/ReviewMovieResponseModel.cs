@@ -15,4 +15,11 @@ namespace MovieShop.Core.Models.Response
         public string Name { get; set; }
     }
 
+    public class ReviewResponseModel
+    {
+        public int UserId { get; set; }
+        public List<ReviewMovieResponseModel> MovieReviews { get; set; }
+
+
+    }
 }

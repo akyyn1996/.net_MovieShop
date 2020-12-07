@@ -32,5 +32,7 @@ namespace MovieShop.Core.RepositoryInterfaces
         Task<T> UpdateAsync(T entity);
 
         Task DeleteAsync(T entity);
+
+        Task<IEnumerable<T>> ListAllWithIncludesAsync(Expression<Func<T, bool>> where, params Expression<Func<T, object>>[] includes);
     }
 }

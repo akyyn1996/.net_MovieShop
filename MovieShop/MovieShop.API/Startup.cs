@@ -41,9 +41,10 @@ namespace MovieShop.API
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAsyncRepository<MovieGenre>, EfRepository<MovieGenre>>();
-            //services.AddScoped<IPurchaseService, PurchaseService>();
-            //services.AddScoped<IPurchaseRepository, PurchaseRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAsyncRepository<Favorite>, EfRepository<Favorite>>();
+            services.AddScoped<IAsyncRepository<Review>, EfRepository<Review>>();
+            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+            services.AddScoped<IUserRepository, UserRepository>(); 
             services.AddScoped<ICryptoService,CryptoService>();
             services.AddDbContext<MovieShopDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(("MovieShopDbConnection"))));

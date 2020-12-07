@@ -36,5 +36,20 @@ namespace MovieShop.API.Controllers
             return CreatedAtRoute("GetMovie", new { id = createdMovie.Id }, createdMovie);
         }
 
+        [HttpGet("purchases")]
+        public async Task<IActionResult> GetAllPurchases([FromQuery] int pageSize = 30, [FromQuery] int page = 1)
+        {
+            var movies = await _movieService.GetAllMoviePurchasesByPagination(pageSize, page);
+            return Ok(movies);
+        }
+
+
+        [HttpGet("top")]
+        public IActionResult GetTopMovies()
+        {
+            var movies = _movieService.GetTopRevenueMovies();                            //
+            return Ok(movies);
+        }
+
     }
 }
