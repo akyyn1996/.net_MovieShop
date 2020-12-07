@@ -12,5 +12,7 @@ namespace MovieShop.infrastructure.Repositories
         Task<IEnumerable<Movie>> GetTopRatedMovies();
         Task<IEnumerable<Movie>> GetMoviesByGenre(int genreId);
         Task<IEnumerable<Movie>> GetHighestRevenueMovies();
+
+        Task<IEnumerable<Review>> GetMovieReviews(int id);
     }
 }

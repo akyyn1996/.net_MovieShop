@@ -40,6 +40,10 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "System.ComponentModel": {
               "target": "Package",
               "version": "[4.3.0, )"

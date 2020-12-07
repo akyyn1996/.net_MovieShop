@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.Web", "MovieShop.Web\MovieShop.Web.csproj", "{6DC41B6C-92F0-43A2-BA34-74A20698AF7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShop.Core", "MovieShop.Core\MovieShop.Core.csproj", "{C048715F-F725-4716-BF18-7A73C4587C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.Core", "MovieShop.Core\MovieShop.Core.csproj", "{C048715F-F725-4716-BF18-7A73C4587C3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShop.infrastructure", "MovieShop.infrastructure\MovieShop.infrastructure.csproj", "{1D64EB6B-3AA3-466F-A65E-345239480A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.infrastructure", "MovieShop.infrastructure\MovieShop.infrastructure.csproj", "{1D64EB6B-3AA3-466F-A65E-345239480A5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.UnitTest", "MovieShop.UnitTest\MovieShop.UnitTest.csproj", "{EF5204CD-5153-4406-A954-DD14FAB45B43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.API", "MovieShop.API\MovieShop.API.csproj", "{5DA7E6BE-FD0F-44AE-9202-406BD541E13C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,13 @@ Global
 		{1D64EB6B-3AA3-466F-A65E-345239480A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D64EB6B-3AA3-466F-A65E-345239480A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D64EB6B-3AA3-466F-A65E-345239480A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF5204CD-5153-4406-A954-DD14FAB45B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5204CD-5153-4406-A954-DD14FAB45B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF5204CD-5153-4406-A954-DD14FAB45B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA7E6BE-FD0F-44AE-9202-406BD541E13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA7E6BE-FD0F-44AE-9202-406BD541E13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA7E6BE-FD0F-44AE-9202-406BD541E13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA7E6BE-FD0F-44AE-9202-406BD541E13C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

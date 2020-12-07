@@ -1,0 +1,250 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.API\\MovieShop.API.csproj": {}
+  },
+  "projects": {
+    "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.API\\MovieShop.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
+        "projectName": "MovieShop.API",
+        "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.API\\MovieShop.API.csproj",
+        "packagesPath": "C:\\Users\\62316\\.nuget\\packages\\",
+        "outputPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\62316\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
+                "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj"
+              },
+              "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj": {
+                "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
+        "projectName": "MovieShop.Core",
+        "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj",
+        "packagesPath": "C:\\Users\\62316\\.nuget\\packages\\",
+        "outputPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\62316\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "System.ComponentModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj",
+        "projectName": "MovieShop.infrastructure",
+        "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\MovieShop.infrastructure.csproj",
+        "packagesPath": "C:\\Users\\62316\\.nuget\\packages\\",
+        "outputPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\62316\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj": {
+                "projectPath": "D:\\Net Movie Shop\\.net_MovieShop\\MovieShop\\MovieShop.Core\\MovieShop.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

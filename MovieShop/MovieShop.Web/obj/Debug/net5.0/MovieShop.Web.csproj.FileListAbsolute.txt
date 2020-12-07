@@ -225,3 +225,4 @@ D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\bin\Debug\net5.0\runtim
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\obj\Debug\net5.0\Razor\Views\Account\MyAccount.cshtml.g.cs
+D:\Net Movie Shop\.net_MovieShop\MovieShop\MovieShop.Web\bin\Debug\net5.0\AutoMapper.dll

@@ -30,6 +30,10 @@ namespace MovieShop.infrastructure.Repositories
             return movies;
         }
 
+        public Task<IEnumerable<Review>> GetMovieReviews(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
