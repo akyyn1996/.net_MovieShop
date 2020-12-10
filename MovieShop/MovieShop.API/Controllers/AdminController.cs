@@ -43,7 +43,6 @@ namespace MovieShop.API.Controllers
             return Ok(movies);
         }
 
-
         [HttpGet("top")]
         public IActionResult GetTopMovies()
         {
