@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using MovieShop.Core.Models.Request;
 using MovieShop.Core.ServiceInterfaces;
 
@@ -22,7 +23,7 @@ namespace MovieShop.API.Controllers
             _movieService = movieService;
         }
 
-
+        [Authorize]
         [HttpPost("purchase")]
         public async Task<ActionResult> CreatePurchase([FromBody] PurchaseRequestModel purchaseRequest)
         {
@@ -30,6 +31,7 @@ namespace MovieShop.API.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPost("favorite")]
         public async Task<ActionResult> CreateFavorite([FromBody] FavoriteRequestModel favoriteRequest)
         {
@@ -37,6 +39,7 @@ namespace MovieShop.API.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPost("unfavorite")]
         public async Task<ActionResult> DeleteFavorite([FromBody] FavoriteRequestModel favoriteRequest)
         {
@@ -44,6 +47,7 @@ namespace MovieShop.API.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpGet("{id:int}/movie/{movieId}/favorite")]
         public async Task<ActionResult> IsFavoriteExists(int id, int movieId)
         {
@@ -51,7 +55,7 @@ namespace MovieShop.API.Controllers
             return Ok(new { isFavorited = favoriteExists });
         }
 
-
+        [Authorize]
         [HttpPost("review")]
         public async Task<ActionResult> CreateReview(ReviewRequestModel reviewRequest)
         {
@@ -59,6 +63,7 @@ namespace MovieShop.API.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPut("review")]
         public async Task<ActionResult> UpdateReview(ReviewRequestModel reviewRequest)
         {
@@ -66,6 +71,7 @@ namespace MovieShop.API.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpDelete("{userId:int}/movie/{movieId:int}")]
         public async Task<ActionResult> DeleteReview(int userId, int movieId)
         {
@@ -73,6 +79,7 @@ namespace MovieShop.API.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpGet("{id:int}/purchases")]
         public async Task<ActionResult> GetUserPurchasedMoviesAsync(int id)
         {
@@ -80,7 +87,7 @@ namespace MovieShop.API.Controllers
             return Ok(userMovies);
         }
 
-
+        [Authorize]
         [HttpGet("{id:int}/favorites")]
         public async Task<ActionResult> GetUserFavoriteMoviesAsync(int id)
         {
@@ -88,7 +95,7 @@ namespace MovieShop.API.Controllers
             return Ok(userMovies);
         }
 
-
+        [Authorize]
         [HttpGet("{id:int}/reviews")]
         public async Task<ActionResult> GetUserReviewedMoviesAsync(int id)
         {
